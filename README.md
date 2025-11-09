@@ -1,8 +1,10 @@
 🧾 SpringBoot-CRUD-Application
+
 A simple backend-only CRUD (Create, Read, Update, Delete)** application built using Spring Boot, Spring Data JPA, and MySQL.  
 This project demonstrates how to design RESTful APIs to perform CRUD operations on a database and test them using Postman.
 
 🚀 Features
+
 - ➕ Create new record  
 - ✏️ Update existing record  
 - ❌ Delete record  
@@ -19,13 +21,14 @@ cd SpringBoot-CRUD-Application
 2️⃣ Configure the Database
 Edit the src/main/resources/application.properties file with your database credentials:
 
-properties
+```properties
 spring.application.name=springboot-crud-application
 spring.datasource.url=jdbc:mysql://localhost:3306/studentinfo
 spring.datasource.username=yourusername
 spring.datasource.password=yourpassword
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
+```
 
 💡 Ensure that the database "studentinfo" exists in MySQL.
 
@@ -43,6 +46,7 @@ or run the main class `SpringBootCrudApplication` in your IDE.
 | `DELETE`    | `/delete/{id}` | Delete record    |
 
 🧩 Dependencies Used
+
 `spring-boot-starter-web`
 `spring-boot-starter-data-jpa`
 `mysql-connector-j`
